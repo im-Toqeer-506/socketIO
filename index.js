@@ -6,7 +6,7 @@ const server = http.createServer(app);
 const io = socketIO(server);
 app.use(cors());
 require("dotenv").config({
-  path: "./.env",
+  path: "/.env",
 });
 app.get("/", (req, res) => {
   res.send("Hello World!");
